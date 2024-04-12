@@ -1,3 +1,10 @@
 -- Drop the students table
+DROP TABLE IF EXISTS students;
+-- ADD THE IF EXISTS IN ORDER TO GET AROUND THE ERROR THAT WOULD COME IF THE TABLE DIDN'T EXIST
 
 -- Recreate it
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name TEXT,
+  last_name TEXT
+);
